@@ -67,12 +67,22 @@ const cards = [
     // Agrega las imágenes que quieras utilizar aquí
   ];
 
+  function shuffleCards(cards) {
+    for (let i = cards.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [cards[i], cards[j]] = [cards[j], cards[i]];
+    }
+    return cards;
+  }
+  
+
   function Memory (){
     const [flippedCards, setFlippedCards] = useState([]);
     const [matchedCards, setMatchedCards] = useState([]);
     const [correctPairs, setCorrectPairs] = useState([]);
     const [showModal, setShowModal] =useState (false);
     
+
     const handleClick = (card) => {
         if (flippedCards.length < 2 && !matchedCards.includes(card)) {
           setFlippedCards([...flippedCards, card]);
@@ -85,6 +95,7 @@ const cards = [
             if (card1.id === 1 && card2.id === 6 || card1.id === 6 && card2.id === 1 || card1.id === 2 && card2.id === 4 || card1.id === 4 && card2.id === 2) {
                 setCorrectPairs([...correctPairs, [card1, card2]]);
                 setShowModal(true);
+                shuffleCards(cards);
             }else if (card1.img === card2.img) {
                 setMatchedCards([...matchedCards, card1, card2]);
               }
