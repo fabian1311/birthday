@@ -7,8 +7,10 @@ function Dashboard () {
     <Link to="/letter" className="buttonLetter"> Entra aquí!</Link>
     <h1> Nuestros bonitos recuerditos </h1>
     <MyCarousel />
-
+    <div className="button-container">
     <Link to ="/home" className="buttonHome">Salir</Link>
+    <Link to ="/game" className="buttonGame">Jueguito</Link>
+    </div>
     </div>
     
   )

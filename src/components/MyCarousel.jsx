@@ -25,7 +25,7 @@ const divStyle = {
   backgroundPosition: 'center',
   backgroundSize: 'contain', // la imagen se ajusta al tamaño del contenedor
   backgroundRepeat: 'no-repeat',
-  height: '100vh'
+  height: '70vh'
 }
 
 

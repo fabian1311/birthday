@@ -13,6 +13,7 @@
     "react": "^18.2.0",
     "react-calendar": "^4.2.1",
     "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
     "react-router-dom": "^6.10.0",
     "react-slideshow-image": "^4.2.1",
     "slick-carousel": "^1.8.1"

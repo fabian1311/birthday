@@ -17,7 +17,7 @@ function MyCalendar() {
       <Calendar onChange={handleDateSelect} value={selectedDate} className="Calendar" />
       {isButtonVisible && (
         <div className={`DashboardButtonContainer ${isButtonVisible ? "show" : ""}`}>
-          <Link to="/dashboard" className="DashboardButton">Ir al Dashboard</Link>
+          <Link to="/dashboard" className="DashboardButton">Así es!, tu cumpleaños </Link>
         </div>
       )}
     </div>

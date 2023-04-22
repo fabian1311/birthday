@@ -13,7 +13,7 @@ function Carte(){
           Mi bebé preciosa, <br />
           Hoy es un día muy especial, porque estás cumpliendo años, y aunque no puedo estar contigo en persona para celebrar, quiero que sepas que mi corazón está contigo en todo momento.
           Cada vez que pienso en ti, me llegan muchos recuerdos, algunos de los cuales viste antes, quiero que los sigamos llenando juntos. Gracias por cambiar mi vida para bien.
-          Quiero que sepas que te amo con todo mi corazón y te mereces el mundo entero y trataré de darte lo mejor de mípara dártelo.
+          Quiero que sepas que te amo con todo mi corazón y te mereces el mundo entero y haré mi mejor esfuerzo para dártelo.
           Feliz cumpleaños, mi amor.
           Con todo mi cariño,
           Alex Que te ama
