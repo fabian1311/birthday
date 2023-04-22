@@ -6,16 +6,17 @@ import './../styles/MyCalendar.css';
 
 function MyCalendar() {
   const [selectedDate, setSelectedDate] = useState(new Date());
-
+  const [isButtonVisible, setIsButtonVisible] = useState(false);
   const handleDateSelect = (date) => {
     setSelectedDate(date);
+    setIsButtonVisible(date.getMonth() === 3 && date.getDate() === 26);
   };
 
   return (
     <div className="CalendarContainer">
       <Calendar onChange={handleDateSelect} value={selectedDate} className="Calendar" />
-      {selectedDate.getMonth() === 3 && selectedDate.getDate() === 26 && (
-        <div className="DashboardButtonContainer">
+      {isButtonVisible && (
+        <div className={`DashboardButtonContainer ${isButtonVisible ? "show" : ""}`}>
           <Link to="/dashboard" className="DashboardButton">Ir al Dashboard</Link>
         </div>
       )}

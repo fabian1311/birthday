@@ -13,9 +13,15 @@
 
 .DashboardButtonContainer {
   display: flex;
- flex-direction: column;
+  flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
 }
 
 .DashboardButton {
@@ -26,4 +32,8 @@
   text-decoration: none;
   font-size: 20px;
   border-radius: 5px;
+}
+
+.DashboardButtonContainer.show {
+  opacity: 1;
 }
