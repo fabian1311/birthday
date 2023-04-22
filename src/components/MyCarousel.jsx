@@ -28,23 +28,6 @@ const divStyle = {
   height: '100vh'
 }
 
-const imageList =[
-  image1,
-  image2,
-  image3,
-  image4,
-  image5,
-  image6,
-  image7,
-  image8,
-  image9,
-  image10,
-  image11,
-  gif1,
-  gif2,
-  gif3,
-  gif4
-  ];
 
   const slideImages = [
     {

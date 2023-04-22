@@ -1,7 +1,6 @@
 
-
-.container{
-    height: 97vh;
+.containerHome{
+    height: 90vh;
     backdrop-filter: blur(5px);
 
 background-color: rgb(208, 209, 245);
