@@ -26,7 +26,7 @@ function MyCalendar() {
       {
         anniversaryVisible &&(
           <div className={`anniversaryButtonContainer ${anniversaryVisible ? "show" : ""}`}>
-          <Link to="/await" className="anniversaryButton">Nuestro aniversario! </Link>
+          <Link to="/aniversary" className="anniversaryButton">Nuestro aniversario! </Link>
         </div>
         )
       }

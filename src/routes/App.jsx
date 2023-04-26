@@ -4,7 +4,8 @@ import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Dashboard from '../page/Dashboard';
 import Letter from '../page/Letter';
 import Game from '../page/Game';
-import Construction from '../page/Construction';
+
+import Gift from '../components/Gift';
 
 function App() {
   return(
@@ -16,7 +17,7 @@ function App() {
                 <Route path="/dashboard" element={<Dashboard />}/> 
                 <Route path="/letter" element ={<Letter />}/>
                 <Route path="/game" element = {<Game />} />
-                <Route path='/await' element = {<Construction />}/>
+                <Route path='/aniversary' element = {<Gift />}/>
             </Routes>
         </BrowserRouter>
     </>
