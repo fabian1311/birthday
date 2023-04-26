@@ -5,7 +5,7 @@ function Anniversary(){
     
     return(
         <div className="Aniversary">
-            <Gift></Gift>
+            <Gift />
         </div>
         
     )
