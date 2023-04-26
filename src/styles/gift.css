@@ -26,7 +26,7 @@ box-shadow: 35px 35px 68px 0px rgba(145, 192, 255, 0.5), inset -8px -8px 16px 0p
 
   max-width: 80%;
   padding: 20px;
-  margin: 0 auto;
+  margin-top: 25%;
   overflow: hidden;
   text-align: center;
 }
@@ -105,6 +105,7 @@ p {
   }
   .cardGift {
     max-width: 90%;
+    margin-top: 5%;
   }
   .Giftimg{
     max-width: 300px;
