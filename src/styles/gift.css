@@ -1,80 +1,50 @@
-
- .gift {
-    display: flex;
-    flex-direction: column ;
-  justify-content: center; 
-  align-items: center; 
+.gift {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: auto;
-
-
-  }
-  
-  .card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    padding: 20px;
-    width: 800px;
-    height: auto;
-    overflow: hidden;
-    transition: height 0.3s ease-in-out  ;
-    -webkit-transition: height 0.3s ease-in-out;
-    -moz-transition: height 0.3s ease-in-out;
-    -ms-transition: height 0.3s ease-in-out;
-    -o-transition: height 0.3s ease-in-out;
 }
-  
- .title {
-    text-align: center;
-    font-size: 2rem;
-    margin: 0;
-    padding: 1rem;
-    cursor: pointer;
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  padding: 20px;
+  width: 800px;
+  overflow: hidden;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.card > p {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.card > p.show {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+.card > div.show {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 90%;
   }
- 
-   p{
-    margin-bottom: 20px;
-    text-align: justify;
-   }
- .expand {
-    opacity: 0;
-    transition: opacity 0.3s ease-out;
-    padding: 0 1rem;
-    height: 0; 
-  } 
-/*   .expand {
-    padding: 0 1rem;
-    opacity: 0;
-    height: 0; 
-    transition: opacity 0.3s ease-in-out;
-  } */
- .expand.show {
-    opacity: 1;
-    transition: opacity 0.3s ease-in;
-    -webkit-transition: opacity 0.3s ease-in;
-    -moz-transition: opacity 0.3s ease-in;
-    -ms-transition: opacity 0.3s ease-in;
-    -o-transition: opacity 0.3s ease-in;
-} 
-
-
- .expand-inner {
-    padding: 1rem;
-    background-color: #ffffff;
-    border-radius: 0.5rem;
-    margin-top: 1rem;
-  }
-  
-  .show {
-    height: auto;
-  } 
-
-
-
-  @media  (max-width:600px) {
-    .card{
-        max-width: 90%;
-        
-    }    
-  }
+}
